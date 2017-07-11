@@ -8,6 +8,7 @@ var plus = document.getElementById('plus')
 var minus = document.getElementById('minus')
 var startStop = document.getElementById('startStop')
 var reset = document.getElementById('reset')
+var ride = document.getElementById('ride')
 
 clock.innerHTML = mins + ':0' + secs
 controlsSpan.innerHTML = clock.innerHTML
@@ -61,6 +62,11 @@ startStop.onclick = function(){
             var timeToDisplay = formatTime(mins, secs)
             console.log(timeToDisplay)
             clock.innerHTML = timeToDisplay
+            if(timeToDisplay == '0:00'){
+                toggleStart = false
+                clock.innerHTML = controlsSpan.innerHTML
+                ride.play()
+            }
         }
     }
 }

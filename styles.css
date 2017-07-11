@@ -1,6 +1,32 @@
 *{
     font-family: 'Avenir';
 }
+body{
+    background: antiquewhite;
+}
+button{
+    background: cornflowerblue;
+    padding: 5px;
+    border: 1px solid cornflowerblue;
+    width: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    background: white;
+    border: 1px double cornflowerblue;
+    color: cornflowerblue;
+}
+#reset, #startStop{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 70px;
+}
 #clock{
     height: 200px;
     width: 200px;
@@ -9,8 +35,13 @@
     margin: 0 auto;
     text-align: center; 
     line-height: 200px;
-    cursor: pointer;
 }
 #controls{
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#controls span{
+    margin-right: 5px;
+    margin-left: 5px;
 }

@@ -1,3 +1,4 @@
+//Written by Michal Stachnik in 2017
 var toggleStart = false
 var mins = 25
 var secs = 0

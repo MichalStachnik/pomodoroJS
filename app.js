@@ -38,7 +38,10 @@ minus.onclick = function(){
 reset.onclick = function(){
     console.log('clicked')
     toggleStart = false
-    clock.innerHTML = controlsSpan.innerHTML
+    mins = 25
+    secs = 0
+    clock.innerHTML = '25:00'
+    controlsSpan.innerHTML = '25:00' 
 }
 startStop.onclick = function(){
     var myTimeout = setInterval(timer, 1000)

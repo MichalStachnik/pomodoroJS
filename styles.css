@@ -3,6 +3,8 @@
 }
 body{
     background: antiquewhite;
+    text-align: center;
+    color: darksalmon;
 }
 button{
     background: cornflowerblue;
